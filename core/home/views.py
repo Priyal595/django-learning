@@ -11,13 +11,13 @@ def home(request):
     ]
     
     text = "Lorem ipsum Morbi erat ex, lacinia nec efficitur eget, sagittis ut orci. Etiam in dolor placerat, pharetra ligula et, bibendum neque. Vestibulum vitae congue lectus, sed ultricies augue. Nam iaculis elit nec velit luctus, vitae rutrum nunc imperdiet. Nunc vel turpis sit amet lectus pellentesque tincidunt. Proin commodo tincidunt enim, at sodales mi dictum ac. Maecenas molestie, metus quis malesuada dictum, leo erat egestas lacus, sit amet tristique urna magna a diam. Donec ultricies dui sit amet mi ornare egestas. Phasellus ultricies lectus non interdum pellentesque. Cras nisi tellus, feugiat sed enim quis, tristique interdum lacus. Sed vel pharetra arcu, ac fermentum neque. Morbi mollis sollicitudin varius. Ut sit amet vulputate velit."
-    return  render(request, 'home\index.html', context={'peoples': peoples, 'text': text})
+    return  render(request, 'home/index.html', context={'peoples': peoples, 'text': text})
 
 def contact(request):
-    return render(request, 'home\contact.html')
+    return render(request, 'home/contact.html')
 
 def about(request):
-    return render(request, 'home\about.html')
+    return render(request, 'home/about.html')
 
 def success_page(request):
     return HttpResponse("<h1> this is a success page </h1>")
